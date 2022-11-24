@@ -1,6 +1,6 @@
 {
     "name": "@shamaz332/react-gdpr",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A lightweight and customizable React component for informing users about the use of cookies on your website.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
