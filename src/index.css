@@ -83,7 +83,9 @@
     border: 0;
     margin-left: auto;
 }
-
+.react-cookie-notice-button-primary {
+    margin-left: inherit !important;
+}
 .react-cookie-notice-container .react-cookie-notice-content .react-cookie-notice-buttons .react-cookie-notice-button-secondary {
     background: none;
     color: #ffffff;
@@ -97,11 +99,13 @@
     background-color: transparent !important;
     color: #ffffff !important;
     display: flex !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
     gap: 10px;
-    margin-top: 10px !important;
+    margin-top: 15px !important;
     padding: 10px !important;
     text-decoration: none !important;
+    width: 100% !important;
     margin-left: auto !important;
-    flex-wrap: nowrap !important;
-    margin-left: auto !important;
+    margin-right: auto !important;
 }
