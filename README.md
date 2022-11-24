@@ -8,14 +8,10 @@ React Cookie Notice gives you full control over the cookies that will be set by 
 ![react-cookie-notice](https://raw.githubusercontent.com/mirzalikic/react-cookie-notice/github-pages/images/react-cookie-notice-1.png)
 ![react-cookie-notice](https://raw.githubusercontent.com/mirzalikic/react-cookie-notice/github-pages/images/react-cookie-notice-2.png)
 
-## Demo
-
-https://mirzalikic.github.io/react-cookie-notice/
-
 ## Installation
 
 ```shell
-npm install @mirzalikic/react-cookie-notice --save
+npm install @shamaz332/react-gdpr --save
 ```
 
 ## Usage
@@ -23,7 +19,7 @@ npm install @mirzalikic/react-cookie-notice --save
 Import:
 
 ```js
-import CookieNotice from '@mirzalikic/react-cookie-notice';
+import CookieNotice from '@shamaz332/react-gdpr';
 ```
 
 Usage:
@@ -64,6 +60,10 @@ Optionally some props can be set. A full list of available props can be found be
 | `preferencesButtonText`     | string   | `Cookie preferences`                  | Content of preferences button.                                                                                     |
 | `savePreferencesButtonText` | string   | `Save cookie preferences`             | Content of save preferences button.                                                                                |
 | `acceptAllButtonText`       | string   | `Accept all cookies`                  | Content of accept button.                                                                                          |
+| `linkOne`                   | string   | ``                                    | First Link.                                                                                                        |
+| `linkTwo`                   | string   | ``                                    | Second Link.                                                                                                       |
+| `linkOneText`               | string   | ``                                    | First Link Text.                                                                                                   |
+| `linkTwoText`               | string   | ``                                    | Second Link Text.                                                                                                  |
 | `cookies`                   | array    | `Array of objects**`                  | Array of available cookies (see Cookies Property).                                                                 |
 | `cookiePrefix`              | string   | `react_cookie_notice_`                | Prefix of the cookie name.                                                                                         |
 | `containerClass`            | string   | `react-cookie-notice-container`       | CSS classes of the container div.                                                                                  |

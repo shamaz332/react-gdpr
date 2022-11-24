@@ -13,6 +13,11 @@ const CookieNotice = ({
     buttonsClass,
     buttonPrimaryClass,
     buttonSecondaryClass,
+    privacyWrapper,
+    linkOne,
+    linkTwo,
+    linkOneText,
+    linkTwoText,
     onSave,
     onInit,
     preferencesButtonText,
@@ -47,7 +52,7 @@ const CookieNotice = ({
         visible: false,
         showCookies: false,
         msg: '',
-        init: false
+        initial: false
     });
 
     const [availableCookies, setAavailableCookies] = useState({ cookies: cookies, callback: false });
@@ -238,7 +243,6 @@ const CookieNotice = ({
                         })}
                     </ul>
                 )}
-
                 <div className={buttonsClass} style={styles.buttons}>
                     {showCookiePreferences ? (
                         options.showCookies ? (
@@ -251,7 +255,18 @@ const CookieNotice = ({
                             </button>
                         )
                     ) : null}
-
+                    <ul className={privacyWrapper}>
+                        <li>
+                            <a title={linkOneText} href={`/${linkOne}`}>
+                                {linkOneText}
+                            </a>
+                        </li>
+                        <li>
+                            <a title={linkTwoText} href={`/${linkTwo}`}>
+                                {linkTwoText}
+                            </a>
+                        </li>
+                    </ul>
                     <button className={buttonPrimaryClass} style={styles.buttonPrimary} onClick={acceptAllCookies}>
                         {acceptAllButtonText}
                     </button>
@@ -275,6 +290,11 @@ CookieNotice.defaultProps = {
     buttonsClass: 'react-cookie-notice-buttons',
     buttonPrimaryClass: 'react-cookie-notice-button-primary',
     buttonSecondaryClass: 'react-cookie-notice-button-secondary',
+    privacyWrapper: 'react-cookie-notice-privacy-wrapper',
+    linkOne: '',
+    linkTwo: '',
+    linkOneText: '',
+    linkTwoText: '',
     onSave: (cookies) => {},
     onInit: (cookies) => {},
     containerStyle: {},
@@ -302,6 +322,11 @@ CookieNotice.propTypes = {
     buttonsClass: PropTypes.string,
     buttonPrimaryClass: PropTypes.string,
     buttonSecondaryClass: PropTypes.string,
+    privacyWrapper: PropTypes.string,
+    linkOne: PropTypes.string,
+    linkTwo: PropTypes.string,
+    linkOneText: PropTypes.string,
+    linkTwoText: PropTypes.string,
     onSave: PropTypes.func,
     onInit: PropTypes.func,
     containerStyle: PropTypes.object,

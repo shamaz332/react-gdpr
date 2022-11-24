@@ -1,9 +1,14 @@
-declare module '@mirzalikic/react-cookie-notice' {
+declare module '@shamaz332/react-gdpr' {
     import * as React from 'react';
 
     export interface CookieNoticeProps {
         preferencesButtonText?: string;
         savePreferencesButtonText?: string;
+        privacyWrapper?: string;
+        linkOne?: string;
+        linkTwo?: string;
+        linkOneText?: string;
+        linkTwoText?: string;
         acceptAllButtonText?: string;
         cookies?: object[];
         cookiePrefix?: string;
