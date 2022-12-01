@@ -52,7 +52,7 @@ const CookieNotice = ({
         visible: false,
         showCookies: false,
         msg: '',
-        initial: false
+        init: false
     });
 
     const [availableCookies, setAavailableCookies] = useState({ cookies: cookies, callback: false });
